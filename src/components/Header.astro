@@ -1,0 +1,107 @@
+---
+
+---
+
+<header
+  class="bg-white border-b border-gray-300 py-4 fixed top-0 left-0 w-full z-50"
+>
+  <div class="container mx-auto flex justify-between items-center px-4">
+    <div class="logo flex items-center gap-4">
+      <a href="/" class="flex items-center no-underline">
+        <img src="/images/logo.jpeg" alt="Company Logo" class="max-w-9" />
+        <h1 class="text-xl font-bold">JP</h1>
+      </a>
+    </div>
+    <nav class="nav hidden md:flex">
+      <ul class="flex gap-4 list-none">
+        <li>
+          <a href="#hero" class="text-gray-800 font-bold no-underline">Home</a>
+        </li>
+        <li>
+          <a href="#about-us" class="text-gray-800 font-bold no-underline"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a href="#products" class="text-gray-800 font-bold no-underline"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a href="#location" class="text-gray-800 font-bold no-underline"
+            >Location</a
+          >
+        </li>
+        <li>
+          <a href="#contact-us" class="text-gray-800 font-bold no-underline"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <button class="md:hidden text-gray-800" id="menu-toggle">
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu hidden md:hidden">
+    <ul class="flex flex-col gap-4 list-none p-4">
+      <li>
+        <a href="#hero" class="text-gray-800 font-bold no-underline">Home</a>
+      </li>
+      <li>
+        <a href="#about-us" class="text-gray-800 font-bold no-underline"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a href="#products" class="text-gray-800 font-bold no-underline"
+          >Products</a
+        >
+      </li>
+      <li>
+        <a href="#location" class="text-gray-800 font-bold no-underline"
+          >Location</a
+        >
+      </li>
+      <li>
+        <a href="#contact-us" class="text-gray-800 font-bold no-underline"
+          >Contact</a
+        >
+      </li>
+      <li>
+        <a href="tel:+1234567890" class="text-gray-800 no-underline"
+          >+123 456 7890</a
+        >
+      </li>
+      <li>
+        <a href="mailto:info@company.com" class="text-gray-800 no-underline"
+          >info@company.com</a
+        >
+      </li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  if (menuToggle) {
+    menuToggle.addEventListener("click", function () {
+      const mobileMenu = document.querySelector(".mobile-menu");
+      if (mobileMenu) {
+        mobileMenu.classList.toggle("hidden");
+      }
+    });
+  }
+</script>
